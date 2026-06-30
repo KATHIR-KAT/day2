@@ -15,7 +15,7 @@ class Node {
 class DoublyLinkedList {
     Node head;
 
-    // Insert at the end
+   
     void insert(int data) {
         Node newNode = new Node(data);
 
@@ -34,7 +34,6 @@ class DoublyLinkedList {
         newNode.prev = temp;
     }
 
-    // Display from front
     void displayForward() {
         Node temp = head;
 
@@ -46,7 +45,7 @@ class DoublyLinkedList {
         System.out.println("null");
     }
 
-    // Display from back
+
     void displayBackward() {
         if (head == null) {
             return;
@@ -54,7 +53,7 @@ class DoublyLinkedList {
 
         Node temp = head;
 
-        // Move to last node
+
         while (temp.next != null) {
             temp = temp.next;
         }
