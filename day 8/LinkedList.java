@@ -11,14 +11,14 @@ class Node {
 public class LinkedList {
     static Node head = null;
 
-    // Insert at Beginning
+ 
     static void insertFirst(int data) {
         Node newNode = new Node(data);
         newNode.next = head;
         head = newNode;
     }
 
-    // Insert at End
+     
     static void insertLast(int data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -32,7 +32,7 @@ public class LinkedList {
         temp.next = newNode;
     }
 
-    // Insert at Position (1-based)
+ 
     static void insertPosition(int pos, int data) {
         if (pos <= 0) {
             System.out.println("Invalid Position");
@@ -59,7 +59,7 @@ public class LinkedList {
         temp.next = newNode;
     }
 
-    // Delete First
+ 
     static void deleteFirst() {
         if (head == null) {
             System.out.println("List is Empty");
@@ -68,7 +68,7 @@ public class LinkedList {
         head = head.next;
     }
 
-    // Delete Last
+  
     static void deleteLast() {
         if (head == null) {
             System.out.println("List is Empty");
@@ -85,7 +85,7 @@ public class LinkedList {
         temp.next = null;
     }
 
-    // Delete at Position (1-based)
+  
     static void deletePosition(int pos) {
         if (head == null) {
             System.out.println("List is Empty");
@@ -114,7 +114,7 @@ public class LinkedList {
         temp.next = temp.next.next;
     }
 
-    // Display
+    
     static void display() {
         if (head == null) {
             System.out.println("List is Empty");
